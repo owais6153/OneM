@@ -1,0 +1,75 @@
+.contar{margin: auto;max-width: 1150px;position: relative;background: #252525;}
+.raw{width: 80%;height: 60px;border-bottom-left-radius: 25px;position: absolute !important;top: 0 !important;right: 15px !important;background-color: #131313;color: #fff;line-height: 60px;padding:0 10px;position: relative;cursor:pointer;}
+.slanted::before{content: '';position: absolute;background-color: none;border-left: solid 60px transparent;border-right: solid 0px transparent;border-top: 50px solid #4290e0;left: -55.5px;top: 0;}
+.raw::before{content: '';position: absolute;background-color: none;border-left: solid 60px transparent;border-right: solid 0px transparent;border-top: 50px solid #131313;left: -55.5px;top: 0;}
+.slanted{border-bottom-left-radius: 25px;width: 280px; font-size: 22px; text-transform: uppercase; font-weight: bold;height: 60px;margin-left: auto;line-height: 60px;padding:0 10px;position: relative;cursor:pointer;color: #000;}
+.navbar{border-top: solid #fff 1px;padding: 0;background: linear-gradient(#fff, #d6d2d2);transition: 1s;max-width: 1150px;margin: auto !important;}
+.acctive{background: #4290e0; position: relative;}
+.nav-link{padding: 20px 20px!important;text-transform: uppercase;font-weight: bold;transition: 1s;color: #000 !important; position: relative; z-index: 1;}
+.nav-link::before{background: #4290e0;content: '';height: 100%;width: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: -1;transition: .3s all ease;}
+.nav-link::after{	content: '';	position: absolute; bottom: -3px; left: 50%;	border-bottom: solid 3px #4290e0;	width: 0%;	transform: translateX(-50%);	transition: .3s all ease;}
+.acctive::after{	content: '';position: absolute; bottom: -3px; left: 0;	border-bottom: solid 3px #4290e0;	width: 100%;	transition: .2s all ease;	}
+.maar{transition: .2s;}
+.navbar-toggler{display: none;color: #4290e0;}
+.apoin{text-transform: uppercase; position: absolute; top: 34px; right: 55px; letter-spacing: 3px;}
+#text{	transition: 2s;}
+.btn-blue{background-color: #4290e0;border-radius: 0px !important;}
+.img-hov{transition: .3s;}
+.text-blue{color: #4290e0 !important;}
+.bg-blue{background-color: #4290e0;}
+.pre-loader{width: 100%; height: 100vh; position: fixed; z-index: 9999;}
+.sspinner{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.ser{transition: .2s;}
+/*HOVER*/
+.ser:hover {background: #e2efef; }
+.img-hov:hover{transform: scale(1.08);}
+.btn-blue:hover {background: #2f71b5;}
+.slanted:hover .maar{margin-left: 10px !important;}
+.nav-link:hover::before{width: 100%;height: 100%;}
+.nav-link:hover::after{width: 100%;}
+.mar{width: 150px;}
+/*MEDIA-QUERY*/
+@media (max-width:580px){.seer{padding: 15px !important;}}
+@media (max-width:442px){.zero{padding: 0!important;  margin-top: 10px!important; }.cnt{padding-left: 5px!important;padding-right: 5px!important;}.three{font-size: 40px !important} }
+@media (max-width:992px){
+#lang{width: 100% !important; margin-left: 0px !important;}
+.abt{font-size: 15px !important;}
+.display-3{font-size: 55px !important;}
+.display-4{font-size: 40px;}
+.raw{width: 100% !important;margin: none !important;
+border-bottom-left-radius: 0px; height: 30px; line-height: 30px;}
+.raw::before{display: none;}
+.container{padding: 0px !important;}
+.hid{display: none;}
+.slanted{font-size: 15px !important;width: 180px !important;line-height: 30px !important;height: 30px !important;}
+.slanted::before{content: '';position: absolute;background-color: none;border-left: solid 30px transparent;border-right: solid 0px transparent;border-top: 27px solid #4290e0;left: -18.5px;top: 0;}
+.mar{margin-top: 40px !important;width: 100px; margin-bottom: 10px;}
+.navbar{display: none;}
+.apoin{top: 17px !important;}
+}
+/*ANIMATION*/
+.ani1{animation: aaa 1s  forwards;}
+.ani2{animation: bbb 1s  forwards;}
+.ani3{animation: ccc 1s  forwards;}
+.ani4{animation: ddd 1s  forwards;}
+.ani-car{animation: car 1s  forwards;	}
+@keyframes car{
+0%{	transform: translateX( 1250px);}
+100%{	transform: translateX( 0px);}
+}
+@keyframes ccc{
+0%{	font-size: 0px;}
+100%{font-size: 10px !important;}
+}
+@keyframes bbb{
+0%{	transform: translateY( -50px);}
+100%{	transform: translateY( 0px);}
+}
+@keyframes aaa{
+0%{	transform: translateX( -150px);}
+100%{	transform: translateX( 0px);}
+}
+@keyframes ddd{
+0%{	transform: translateX( 150px);}
+100%{	transform: translateX( 0px);}
+}
